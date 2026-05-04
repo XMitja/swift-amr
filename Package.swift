@@ -6,10 +6,7 @@ import PackageDescription
 let package = Package(
     name: "SwiftAmr",
     platforms: [
-        .macOS(.v10_12),
-        .iOS(.v12),
-        .tvOS(.v12),
-        .watchOS(.v6),
+        .iOS(.v26),
     ],
     products: [
         .library(
