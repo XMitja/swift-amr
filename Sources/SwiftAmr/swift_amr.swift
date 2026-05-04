@@ -8,7 +8,7 @@ public class AmrCodec {
         SwiftAmr_DecoderInit()
     }
 
-    func decode(_ input: Data, output: UnsafeMutableBufferPointer<Int16>) -> Int {
+    public func decode(_ input: Data, output: UnsafeMutableBufferPointer<Int16>) -> Int {
         input.withUnsafeBytes { inputBuffer in
             let ret = SwiftAmr_decode(
                 inputBuffer.baseAddress, Int32(input.count), output.baseAddress, 0)
