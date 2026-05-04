@@ -3,7 +3,7 @@ import AVFoundation
 
 @MainActor
 public class AmrCodec {
-    static let I = AmrCodec()
+    public static let I = AmrCodec()
     private init() {
         SwiftAmr_DecoderInit()
     }
