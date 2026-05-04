@@ -1,8 +1,7 @@
 import AVFoundation
 @_exported import CSwiftAmr
 
-@MainActor
-public class AmrCodec {
+public final class AmrCodec: Sendable {
     public static let I = AmrCodec()
     private init() {
         SwiftAmr_DecoderInit()
