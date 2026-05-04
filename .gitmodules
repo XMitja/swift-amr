@@ -1,0 +1,3 @@
+[submodule "Sources/CSwiftAmr"]
+	path = Sources/CSwiftAmr
+	url = https://github.com/XMitja/swift-amr.git
